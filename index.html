@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Mi Website</title>
+
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+
+<link rel="stylesheet" href="reglas.css">
+
+
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="index.html">
+            Mi Website
+        </a>
+
+        <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">
+                        Login
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="tags.html">
+                        HTML Tags
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">
+                        Profile
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="formulario.html">
+                        Formulario
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<main class="container">
+
+    <div class="login-container">
+
+        <h1 class="text-center">
+            ¡Bienvenidos!
+        </h1>
+
+        <h2 class="text-center mb-4">
+            Login
+        </h2>
+        <form id="login-form" novalidate>
+
+            <div class="mb-3">
+                <label for="username" class="form-label">
+                    Username:
+                </label>
+
+                <input type="text"
+                    class="form-control"
+                    id="username"
+                    name="username"
+                    placeholder="Enter your username">
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label">
+                    Password:
+                </label>
+
+                <input type="password"
+                    class="form-control"
+                    id="password"
+                    name="password"
+                    placeholder="Enter your password">
+            </div>
+
+            <div class="d-grid">
+                <button type="submit" class="btn btn-primary">
+                    Login
+                </button>
+            </div>
+
+        </form>
+
+        <div id="login-message" class="alert d-none mt-3" role="alert"></div>
+
+        <div class="demo-credentials text-center mt-3">
+            <small><strong>Credenciales de prueba:</strong> usuario: grecia | contraseña: 1234</small>
+        </div>
+
+
+            <p class="text-center mt-3">
+                ¿Tienes cuenta?
+                <a href="profile.html">Mirar profile</a>
+            </p>
+
+            <p class="highlight text-center">
+                Bienvenido a mi primera página web.
+            </p>
+
+            <p id="special-paragraph" class="text-center">
+                Aquí puedes ingresar a tu cuenta.
+            </p>
+
+    </div>
+
+</main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

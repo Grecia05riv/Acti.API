@@ -1,0 +1,111 @@
+body {
+font-family: Arial, sans-serif;
+background-color: #f5f1e8;
+margin: 0;
+padding: 0;
+}
+
+
+h1 {
+color: #8b4513;
+}
+
+h2 {
+color: #a0522d;
+}
+
+p {
+color: #444444;
+line-height: 1.6;
+}
+
+.highlight {
+color: #c75b12;
+}
+
+
+#special-paragraph {
+color: #6b2d5c;
+}
+
+img {
+border-radius: 50%;
+max-width: 200px;
+height: auto;
+}
+
+
+main {
+padding: 30px;
+}
+
+
+.login-container {
+max-width: 500px;
+margin: 40px auto;
+padding: 30px;
+background-color: white;
+border-radius: 10px;
+}
+
+
+.profile-section {
+margin-bottom: 30px;
+padding: 20px;
+background-color: white;
+border-radius: 10px;
+}
+
+
+
+
+.demo-credentials {
+    color: #666666;
+}
+
+#resultado-js {
+    padding: 12px;
+    background-color: #f4ede4;
+    border-radius: 8px;
+}
+
+body.tema-oscuro {
+    background-color: #212529;
+    color: #f8f9fa;
+}
+
+body.tema-oscuro .profile-section,
+body.tema-oscuro .login-container {
+    background-color: #343a40;
+}
+
+body.tema-oscuro p,
+body.tema-oscuro #resultado-js {
+    color: #f8f9fa;
+}
+
+body.tema-oscuro #resultado-js {
+    background-color: #495057;
+}
+
+
+#formulario-registro {
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+#formulario-registro hr {
+    border-color: #d7c4ae;
+}
+
+#formulario-registro .form-check-label,
+#formulario-registro .form-label {
+    color: #444444;
+}
+
+body.tema-oscuro #formulario-registro .form-check-label,
+body.tema-oscuro #formulario-registro .form-label,
+body.tema-oscuro #formulario-registro .form-text {
+    color: #f8f9fa;
+}
+

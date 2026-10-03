@@ -1,0 +1,21 @@
+{
+  "name": "html_actividad-main-3",
+  "version": "1.0.0",
+  "description": "git hub repositoray: https://github.com/Grecia05riv/HTML_Actividad.git",
+  "main": "index.js",
+ "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^18.0.5",
+    "express": "^5.2.1",
+    "morgan": "^1.12.1",
+    "mssql": "^12.7.2",
+    "nodemon": "^3.1.14"
+  }
+}
