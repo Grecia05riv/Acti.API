@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Usuarios - Mi Website</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="reglas.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+                Mi Website
+            </a>
+
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="profile.html">
+                    Profile
+                </a>
+
+                <a class="nav-link active" href="usuarios.html">
+                    Usuarios
+                </a>
+
+                <button
+                    id="btn-logout"
+                    class="btn btn-outline-light ms-3"
+                    type="button">
+                    Cerrar sesión
+                </button>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <main class="container mt-5">
+
+        <h1>Usuarios registrados</h1>
+
+        <p>
+            Información obtenida desde la REST API.
+        </p>
+
+        <div id="mensaje-usuarios"></div>
+
+        <div class="card mb-4">
+    <div class="card-body">
+
+        <h3>Agregar usuario</h3>
+
+        <form id="form-usuario">
+
+            <div class="mb-3">
+                <label for="nuevo-username" class="form-label">
+                    Username
+                </label>
+
+                <input
+                    type="text"
+                    class="form-control"
+                    id="nuevo-username"
+                    required>
+            </div>
+
+            <div class="mb-3">
+                <label for="nuevo-password" class="form-label">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    class="form-control"
+                    id="nuevo-password"
+                    required>
+            </div>
+
+            <div class="mb-3">
+                <label for="nuevo-nombre" class="form-label">
+                    Nombre
+                </label>
+
+                <input
+                    type="text"
+                    class="form-control"
+                    id="nuevo-nombre">
+            </div>
+
+            <div class="mb-3">
+                <label for="nuevo-email" class="form-label">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    class="form-control"
+                    id="nuevo-email">
+            </div>
+
+            <button
+                type="submit"
+                class="btn btn-primary"
+                id="btn-guardar">
+                Agregar usuario
+            </button>
+
+            <button
+                type="button"
+                class="btn btn-secondary d-none"
+                id="btn-cancelar">
+                Cancelar edición
+            </button>
+
+        </form>
+
+    </div>
+</div>
+
+        <div class="table-responsive">
+
+            <table class="table table-striped table-bordered">
+
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Username</th>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tabla-usuarios">
+
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <script src="usuarios.js"></script>
+
+</body>
+
+</html>
